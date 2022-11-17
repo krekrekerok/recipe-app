@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Recipe App</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Find any Recipe by Ingredient</h1>
+        </header>
+
+        <main>
+            <section class="search-part">
+                <input type="text" class="search-box" id="search-value" placeholder="Enter ingredient name">
+                <button id="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </section>
+
+            <section class="result-part">
+                <h2 id="result-text"></h2>
+                <!-- <h2>Best matches:</h2> -->
+                <div id="result-list">
+                </div>
+
+                <div class="meal-recipe">
+                    <button type="button" id="recipe-close-btn">
+                        <i class="fas fa-times" ></i>
+                    </button>
+
+                    <!-- recipe itself -->
+                    <div class="recipe-details">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
